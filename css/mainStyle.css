@@ -1,0 +1,96 @@
+html,body{
+	background-color: #ddd;
+	/*display: flex;*/
+	background-image: url(https://wallup.net/wp-content/uploads/2016/05/26/197921-digital_art-artwork-minimalism-gray_background-Sun-birds-palm_trees-deck_chairs-pier-sea-clouds.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	margin: 0 auto;
+	height: 100vh; width: 100vw;
+
+
+}
+
+.left{
+	background-color: rgba(200,0,200,0.3);
+	margin: 1em;
+	/*padding: 1em;*/
+	/*position: fixed;*/
+	/*width: 50%;
+	height: 100%;
+	left: 0; left: 0;*/
+	
+
+}
+
+.right{
+	background-color: rgba(0,350,50,0.5);
+	margin: 1em;
+	/*padding: 1em;*/
+	/*position: fixed;*/
+	/*width: 50%;
+	height: 100%;
+	top: 0; right:;
+	*/
+}
+
+button.startButton{
+	margin-left: 10px;
+	color:#f00;
+	background-color: #0ff;
+	
+}
+
+.rocket{
+	position: absolute;
+	background-color: red;
+	padding:10px;
+	left: 75%;
+	bottom: 20px;
+	width: 1em;
+	height: 5em;
+	transition: bottom 10000ms;
+}
+
+.ground{
+	background-color: green;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	width:50%;
+	height: 20px;
+}
+
+.rocket.flying{
+	bottom: 1000px;
+}
+
+
+.state1,.state2,.state3,.state4,.state5{
+	display: none;
+}
+
+body.body-state1 .state1{
+	display: block;
+}
+
+body.body-state2 .state2{
+	display: block;
+}
+
+body.body-state3 .state3{
+	display: block;
+}
+
+body.body-state4 .state4{
+	display: block;
+}
+
+body.body-state5 .state5{
+	display: block;
+}
