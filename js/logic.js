@@ -10,11 +10,25 @@ var changeState = function(state) {
 			document.getElementById('countDown').innerHTML 
 			= countDownNumber;
 			countDownNumber -=1;
-		} else{
+		} else if(countDownNumber==0){
 			state = 3;
 			changeState(state);
 		}
-		}, 1000);
+		}, 200);
 		
+	} 
+
+	else if (state == 3){
+		var postLaunch = setTimeout( function(){
+			var randomNumber= Math.round(Math.random()*10);
+
+			if(randomNumber>5){
+				changeState(4);
+			} else{
+				changeState(5);
+			}
+
+		},2000)
 	}
+	;
 }
