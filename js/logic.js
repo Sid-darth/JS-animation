@@ -1,21 +1,28 @@
-var timer = null;
-var countDownNumber = 10;
+
+var timer = null; 
 
 var changeState = function(state) {
 	document.body.className = "body-state"+state;
 
+
+	clearInterval(timer);
+
+	
+	var countDownNumber = 10;
+	document.getElementById('countDown').innerHTML = 
+			countDownNumber;
 	if(state==2){
 		timer = setInterval(function(){
-			if (countDownNumber>0) {
-			document.getElementById('countDown').innerHTML 
-			= countDownNumber;
-			countDownNumber -=1;
-		} else if(countDownNumber==0){
-			state = 3;
-			changeState(state);
-		}
+			
+			countDownNumber -= 1;
+			document.getElementById('countDown').innerHTML = 
+			countDownNumber;
+			
+
+			if (countDownNumber == 0) {
+				changeState(3);
+			}
 		}, 200);
-		
 	} 
 
 	else if (state == 3){
@@ -28,7 +35,6 @@ var changeState = function(state) {
 				changeState(5);
 			}
 
-		},2000)
-	}
-	;
+		},1500)
+	};
 }
