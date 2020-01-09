@@ -30,11 +30,11 @@ var changeState = function(state) {
 			var randomNumber= Math.round(Math.random()*10);
 
 			if(randomNumber>5){
-				changeState(4);
-			} else{
 				changeState(5);
+			} else{
+				changeState(4);
 			}
 
-		},1500)
+		},3000)
 	};
 }
