@@ -28,7 +28,7 @@ html,body{
 }
 
 .right{
-	background-color: rgba(0,350,50,0.5);
+	/*background-color: rgba(0,350,50,0.5);*/
 	margin: 1em;
 	/*padding: 1em;*/
 	/*position: fixed;*/
@@ -47,13 +47,15 @@ button.startButton{
 
 .rocket{
 	position: absolute;
-	background-color: red;
-	padding:10px;
+	/*background: url('../img/0.jpg') no-repeat 0 0;*/
+	opacity: 0.75;
 	left: 75%;
-	bottom: 20px;
-	width: 1em;
-	height: 5em;
-	transition: bottom 10000ms;
+	bottom: -20px;
+	width: 100%;
+  	height: auto
+	
+	margin-left: -200px;
+	transition: bottom 5000ms;
 }
 
 .ground{
@@ -71,7 +73,7 @@ body.body-state1 .rocket{
 }
 
 body.body-state3 .rocket, body.body-state4 .rocket{
-	bottom: 1000px;
+	bottom: 5000px;
 }
 
 
