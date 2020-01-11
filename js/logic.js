@@ -22,7 +22,7 @@ var changeState = function(state) {
 			if (countDownNumber == 0) {
 				changeState(3);
 			}
-		}, 200);
+		}, 300);
 	} 
 
 	else if (state == 3){
@@ -30,11 +30,11 @@ var changeState = function(state) {
 			var randomNumber= Math.round(Math.random()*10);
 
 			if(randomNumber>5){
-				changeState(5);
-			} else{
 				changeState(4);
+			} else{
+				changeState(5);
 			}
 
-		},3000)
+		},2000)
 	};
 }

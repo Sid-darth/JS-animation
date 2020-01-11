@@ -1,42 +1,38 @@
 html,body{
 	background-color: #ddd;
 	/*display: flex;*/
-	background-image: url(https://wallup.net/wp-content/uploads/2016/05/26/197921-digital_art-artwork-minimalism-gray_background-Sun-birds-palm_trees-deck_chairs-pier-sea-clouds.jpg);
+	background-image: url(../img/bg_1.jpg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	display: grid;
-	grid-template-columns: 5fr 5fr;
+	grid-template-columns: 1fr 2fr;
 	margin: 0 auto;
 	height: 100vh; width: 100vw;
 
 
 }
 
+h1{
+	font-family: "Comic Sans MS",cursive, sans-serif;
+	color: #fff;
+}
+
 .left{
 	background-color: rgba(200,0,200,0.3);
-	margin: 1em;
-	/*padding: 1em;*/
-	/*position: fixed;*/
-	/*width: 50%;
-	height: 100%;
-	left: 0; left: 0;*/
-	
+	text-align: center;
+	padding-top: 10em;
+	padding-left: 2em;
 
 }
 
 .right{
-	/*background-color: rgba(0,350,50,0.5);*/
-	margin: 1em;
-	/*padding: 1em;*/
-	/*position: fixed;*/
-	/*width: 50%;
-	height: 100%;
-	top: 0; right:;
-	*/
+	
 }
+
+
 
 button.startButton{
 	margin-left: 10px;
@@ -47,26 +43,31 @@ button.startButton{
 
 .rocket{
 	position: absolute;
-	/*background: url('../img/0.jpg') no-repeat 0 0;*/
-	opacity: 0.75;
-	left: 75%;
-	bottom: -20px;
-	width: 100%;
-  	height: auto
-	
-	margin-left: -200px;
-	transition: bottom 5000ms;
+
+	width: 71.5px; height: 136px;
+	background-color: blue; 
+	bottom: -8px;
+	left: 67%;
+	background: url('../img/rocket-state1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: bottom 15000ms;
 }
 
-.ground{
-	background-color: green;
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	right: 0;
-	width:50%;
-	height: 20px;
+body.body-state2 .rocket{
+	background-image: url('../img/rocket-state2.gif');
 }
+
+body.body-state3 .rocket{
+	background-image: url('../img/rocket-state3.gif');
+}
+
+body.body-state5 .rocket{
+	background-image: url('../img/boom.png');
+	width: 209px; height: 200px;
+	left: 66%
+}
+
 
 body.body-state1 .rocket{
 	transition:none ;
@@ -99,4 +100,12 @@ body.body-state4 .state4{
 
 body.body-state5 .state5{
 	display: block;
+}
+
+.ground{
+	background-color: green;
+	position: absolute;
+	bottom: -15px;
+	width:80%;
+	height: 20px;
 }
