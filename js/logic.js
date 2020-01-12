@@ -18,11 +18,25 @@ var changeState = function(state) {
 			document.getElementById('countDown').innerHTML = 
 			countDownNumber;
 			
+			
+			if(countDownNumber >5 ){
+				document.getElementById('content1').className = 'content1 show'
+			} else{
+				document.getElementById('content1').className = 'content1'
+			};
 
-			if (countDownNumber == 0) {
+			
+			if(countDownNumber>2 && countDownNumber <7){
+				document.getElementById('content2').className = 'content2 show'
+			} else{
+				document.getElementById('content2').className = 'content2';
+			}; 
+				
+
+			if (countDownNumber <= 0) {
 				changeState(3);
-			}
-		}, 300);
+			};
+		}, 500);
 	} 
 
 	else if (state == 3){

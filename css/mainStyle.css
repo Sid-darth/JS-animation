@@ -1,7 +1,6 @@
 html,body{
 	background-color: #ddd;
-	/*display: flex;*/
-	background-image: url(../img/bg_1.jpg);
+	/*background-image: url(../img/bg_1.jpg);*/
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -29,7 +28,13 @@ h1{
 }
 
 .right{
-	
+	background-image: url(../img/bg_1.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 1em;
+
 }
 
 
@@ -39,6 +44,34 @@ button.startButton{
 	color:#f00;
 	background-color: #0ff;
 	
+}
+
+.content1{
+	position: absolute;
+	top: 13em;
+	left: 75%;
+	background: url('../img/cant-wait.png') no-repeat 0 0;
+	width: 204px;
+	height: 65px;
+	display: none;
+}
+
+.content1.show{
+	display: block;
+}
+
+.content2{
+	position: absolute;
+	top: 13em;
+	left: 49%;
+	background: url('../img/nervous.png') no-repeat 0 0;
+	width: 241px;
+	height: 120px;
+	display: none;
+}
+
+.content2.show{
+	display: block;
 }
 
 .rocket{
@@ -65,7 +98,7 @@ body.body-state3 .rocket{
 body.body-state5 .rocket{
 	background-image: url('../img/boom.png');
 	width: 209px; height: 200px;
-	left: 66%
+	left: 62%
 }
 
 
@@ -73,34 +106,28 @@ body.body-state1 .rocket{
 	transition:none ;
 }
 
+
+
+
+
+
 body.body-state3 .rocket, body.body-state4 .rocket{
 	bottom: 5000px;
 }
 
 
-.state1,.state2,.state3,.state4,.state5{
-	display: none;
-}
+.state1,.state2,.state3,.state4,.state5{display: none;}
 
-body.body-state1 .state1{
-	display: block;
-}
+body.body-state1 .state1{display: block;}
 
-body.body-state2 .state2{
-	display: block;
-}
+body.body-state2 .state2{display: block;}
 
-body.body-state3 .state3{
-	display: block;
-}
+body.body-state3 .state3{display: block;}
 
-body.body-state4 .state4{
-	display: block;
-}
+body.body-state4 .state4{display: block;}
 
-body.body-state5 .state5{
-	display: block;
-}
+body.body-state5 .state5{display: block;}
+
 
 .ground{
 	background-color: green;
