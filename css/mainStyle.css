@@ -131,7 +131,7 @@ body.body-state5 .state5{display: block;}
 
 
 .ground{
-	background-color: green;
+	background-color: rgba(0,200,0,0.35);
 	position: fixed;
 	bottom: 0em;
 	width:80%;
