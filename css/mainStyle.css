@@ -75,7 +75,7 @@ button.startButton{
 }
 
 .rocket{
-	position: absolute;
+	position: fixed;
 
 	width: 200px; height: 182px;
 	background-color: blue; 
