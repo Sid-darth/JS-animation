@@ -28,7 +28,7 @@ h1{
 }
 
 .right{
-	/*background-image: url(../img/bg_1.jpg);*/
+	background-image: url(../img/bg_1.jpg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

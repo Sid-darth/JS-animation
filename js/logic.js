@@ -43,7 +43,7 @@ var changeState = function(state) {
 		var postLaunch = setTimeout( function(){
 			var randomNumber= Math.round(Math.random()*10);
 
-			if(randomNumber>5){
+			if(randomNumber>4){
 				changeState(4);
 			} else{
 				changeState(5);
