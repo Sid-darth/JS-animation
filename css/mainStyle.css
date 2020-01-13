@@ -28,7 +28,7 @@ h1{
 }
 
 .right{
-	background-image: url(../img/bg_1.jpg);
+	/*background-image: url(../img/bg_1.jpg);*/
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -48,7 +48,7 @@ button.startButton{
 
 .content1{
 	position: absolute;
-	top: 13em;
+	top: 19em;
 	left: 75%;
 	background: url('../img/cant-wait.png') no-repeat 0 0;
 	width: 204px;
@@ -62,7 +62,7 @@ button.startButton{
 
 .content2{
 	position: absolute;
-	top: 13em;
+	top: 19em;
 	left: 49%;
 	background: url('../img/nervous.png') no-repeat 0 0;
 	width: 241px;
@@ -77,22 +77,23 @@ button.startButton{
 .rocket{
 	position: absolute;
 
-	width: 71.5px; height: 136px;
+	width: 200px; height: 182px;
 	background-color: blue; 
-	bottom: -8px;
-	left: 67%;
-	background: url('../img/rocket-state1.png');
+	left: 62%;
+	bottom: 0.5em;
+	background: url('../img/t-64.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	transition: bottom 15000ms;
 }
 
 body.body-state2 .rocket{
-	background-image: url('../img/rocket-state2.gif');
+	background-image: url('../img/t-64-state2.gif');
+	bottom: 1.5em;
 }
 
 body.body-state3 .rocket{
-	background-image: url('../img/rocket-state3.gif');
+	background-image: url('../img/t-64-state3.gif');
 }
 
 body.body-state5 .rocket{
@@ -131,8 +132,8 @@ body.body-state5 .state5{display: block;}
 
 .ground{
 	background-color: green;
-	position: absolute;
-	bottom: -15px;
+	position: fixed;
+	bottom: 0em;
 	width:80%;
 	height: 20px;
 }
