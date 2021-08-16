@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animation with JS</title>
-	<script type="text/javascript" src="js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Rocket Launch!</title>
+	<script type="text/javascript" src="js/logic.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 </head>
-<body>
-	<h1>JS Rocket</h1>
-	<a href="#" onclick="doCoolStuff()">
-	CLICK ME</a>
+<body class="body-state1">
 
-	<div class="cool" id="cool">
-		<p>Hello, I'm cool</p>
+	<div class="left">
+		<div class="state1">
+			<h1>Rocket Launch using Javascript</h1>
+			<!-- <a href="#" class="button" onclick="startCountDown();">Lauch!</a> -->
+			<button class="startButton" onclick="changeState(2)">LES GO!</button>
+		</div>
+
+		<div class="state2">
+			<h1 id="countDown">10</h1>
+			<!-- <a href="#" class="button" onclick="startCountDown();">Lauch!</a> -->
+			<button class="startButton" onclick="changeState(1)">ABORT!</button>
+		</div>
+
+		<div class="state3">
+			<h1>Lift Off!</h1>
+		</div>
+
+		<div class="state4">
+			<h1 id="countDown">Successful Launch!</h1>
+			<!-- <a href="#" class="button" onclick="startCountDown();">Lauch!</a> -->
+			<button class="startButton" onclick="changeState(1)">Repeat</button>
+		</div>
+
+		<div class="state5">
+			<h1 id="countDown">NoooOOoooOoo!</h1>
+			<!-- <a href="#" class="button" onclick="startCountDown();">Lauch!</a> -->
+			<button class="startButton" onclick="changeState(1)">Let's Try again!</button>
+		</div>
+
+		
 	</div>
+	<div class="right">
+		<h1>Launch screen</h1>
+		
+		<div class="rocket">
+			<!-- <img src="img/rocket-state1.png"> -->
+		</div>
+		
+		<div class="ground">
+			<h7>Ground</h7>
+		</div>
+
+		<div class="content1" id="content1"></div>
+		<div class="content2" id="content2"></div>
+
+	</div>
+
 </body>
 </html>
